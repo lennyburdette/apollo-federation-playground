@@ -1,0 +1,20 @@
+{
+  "name": "node-relay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@apollo/server": "^4.3.2",
+    "@apollo/subgraph": "^2.3.0",
+    "concurrently": "^7.6.0",
+    "graphql": "^16.6.0",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "start:authors": "nodemon author.js -e graphqls,js",
+    "start:book": "nodemon book.js -e graphqls,js",
+    "start:node-relay": "nodemon node-relay.js -e graphqls,js",
+    "start": "concurrently \"npm:start:*\""
+  }
+}

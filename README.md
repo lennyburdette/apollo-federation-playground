@@ -70,3 +70,15 @@ will fail to resolve since the resolver endpoints are fake. The query plan will 
 
 [install rover]: https://www.apollographql.com/docs/rover/getting-started
 [install router]: https://www.apollographql.com/docs/router/quickstart
+
+```
+rover dev --name author --schema examples/node-relay/author-subgraph.graphqls --url http://localhost:4001
+```
+
+```
+rover dev --name book --schema examples/node-relay/book-subgraph.graphqls --url http://localhost:4002
+```
+
+```
+rover dev --name node-relay --schema examples/node-relay/node-relay-subgraph.graphqls --url http://localhost:4003
+```

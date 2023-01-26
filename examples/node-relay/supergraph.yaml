@@ -1,15 +1,14 @@
 federation_version: 2
 subgraphs:
   book_subgraph:
-    routing_url: https://films.example.com
+    routing_url: http://localhost:4002
     schema:
       file: ./book-subgraph.graphqls
   author_subgraph:
-    routing_url: https://films.example.com
+    routing_url: http://localhost:4001
     schema:
       file: ./author-subgraph.graphqls
   node_relay_subgraph:
-    routing_url: https://films.example.com
+    routing_url: http://localhost:4003
     schema:
       file: ./node-relay-subgraph.graphqls
-

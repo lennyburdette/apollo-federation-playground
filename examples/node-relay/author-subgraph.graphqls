@@ -21,7 +21,7 @@ type Query {
   b: Boolean
 }
 
-type Author @key(fields: "authorId") {
+type Author @key(fields: "authorId __typename") {
   authorId: String!
   fullName: String!
 }
